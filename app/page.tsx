@@ -29,8 +29,8 @@ export default function Home() {
               prediction markets
               {/* Mobile Backdrop */}
               {showTooltip && (
-                <div
-                  className="fixed inset-0 z-40 bg-black/20 md:hidden"
+                <span
+                  className="fixed inset-0 z-40 bg-black/20 md:hidden block"
                   onClick={(e) => {
                     e.stopPropagation();
                     setShowTooltip(false);
