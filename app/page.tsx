@@ -101,12 +101,10 @@ export default function Home() {
         <h2 className="text-xs font-semibold uppercase tracking-wide text-loam-muted">Process for employers</h2>
         <div className="grid gap-3 sm:gap-4 md:grid-cols-3">
           <div className="rounded-lg border border-loam-border bg-white/50 p-4 sm:p-5 flex flex-col">
-            <div className="flex justify-center mb-3">
+            <h3 className="text-base font-semibold text-loam-ink mb-2 flex items-center gap-2">
               <span className="inline-flex items-center justify-center rounded-full bg-loam-accent/10 px-2.5 py-0.5 text-xs font-semibold text-loam-accent">
                 1
               </span>
-            </div>
-            <h3 className="text-base font-semibold text-loam-ink mb-2">
               Email your role
             </h3>
             <p className="text-sm text-loam-muted leading-relaxed">
@@ -114,12 +112,10 @@ export default function Home() {
             </p>
           </div>
           <div className="rounded-lg border border-loam-border bg-white/50 p-4 sm:p-5 flex flex-col">
-            <div className="flex justify-center mb-3">
+            <h3 className="text-base font-semibold text-loam-ink mb-2 flex items-center gap-2">
               <span className="inline-flex items-center justify-center rounded-full bg-loam-accent/10 px-2.5 py-0.5 text-xs font-semibold text-loam-accent">
                 2
               </span>
-            </div>
-            <h3 className="text-base font-semibold text-loam-ink mb-2">
               We reply once a day
             </h3>
             <p className="text-sm text-loam-muted leading-relaxed">
@@ -127,12 +123,10 @@ export default function Home() {
             </p>
           </div>
           <div className="rounded-lg border border-loam-border bg-white/50 p-4 sm:p-5 flex flex-col">
-            <div className="flex justify-center mb-3">
+            <h3 className="text-base font-semibold text-loam-ink mb-2 flex items-center gap-2">
               <span className="inline-flex items-center justify-center rounded-full bg-loam-accent/10 px-2.5 py-0.5 text-xs font-semibold text-loam-accent">
                 3
               </span>
-            </div>
-            <h3 className="text-base font-semibold text-loam-ink mb-2">
               Pay on success
             </h3>
             <p className="text-sm text-loam-muted leading-relaxed">
