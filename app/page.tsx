@@ -116,7 +116,7 @@ export default function Home() {
               <span className="inline-flex items-center justify-center rounded-full bg-loam-accent/10 px-2.5 py-0.5 text-xs font-semibold text-loam-accent">
                 2
               </span>
-              We reply once a day
+              We reply daily
             </h3>
             <p className="text-sm text-loam-muted leading-relaxed">
               We ask questions about the role and candidates. You reply with only what you want to provide.
