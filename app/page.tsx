@@ -153,7 +153,7 @@ export default function Home() {
             <span className="font-semibold text-loam-ink">Truth-finding through incentives.</span> Prediction markets are very good at finding the truth. Every incentive to lie is another's incentive to call it out. They fairly reward the best, and "experts" who are wrong lose and can't participate.
           </p>
           <p>
-            <span className="font-semibold text-loam-ink">Dialectical process.</span> Bidding on questions enables a conversation with the goal of finding the truth. Role definitions shift as you interview. There's a lot of reading between the lines that no person or AI can get without digging.
+            <span className="font-semibold text-loam-ink">Rigorous debate.</span> Bidding on questions enables a conversation with the goal of finding the truth. Role definitions shift as you interview. There's a lot of reading between the lines that no person or AI can get without digging.
           </p>
           <p>
             <span className="font-semibold text-loam-ink">Real experts.</span> Real experts with domain knowledge tease out the right questions. Traditional recruitment struggles to distinguish between AI-generated buzzwords and true indicators of talent.
