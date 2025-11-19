@@ -40,15 +40,41 @@ export function Header() {
                     </div>
                 </button>
 
-                {/* Mobile Navigation Overlay */}
-                <div
-                    className={`fixed inset-0 bg-loam-beige z-40 flex flex-col items-center justify-center transition-opacity duration-300 md:hidden ${isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-                        }`}
-                >
-                    <nav className="flex flex-col items-center gap-8 text-lg">
-                        <NavLinks onClick={() => setIsMenuOpen(false)} />
-                    </nav>
-                </div>
+                {/* Mobile menu overlay */}
+                {isMenuOpen && (
+                    <div className="fixed inset-0 z-50 bg-loam-beige md:hidden">
+                        <div className="flex h-full flex-col">
+                            <div className="flex items-center justify-between border-b border-loam-border bg-loam-beige/95 px-4 py-4">
+                                <Link href="/" className="text-lg font-semibold">
+                                    loam.market
+                                </Link>
+                                <button
+                                    onClick={() => setIsMenuOpen(false)}
+                                    className="rounded-lg p-2 hover:bg-loam-border/20"
+                                    aria-label="Close menu"
+                                >
+                                    <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <nav className="flex flex-col gap-1 p-4">
+                                <Link href="/fractal" className="rounded-lg px-4 py-3 text-base hover:bg-loam-border/20" onClick={() => setIsMenuOpen(false)}>
+                                    Fractal Network
+                                </Link>
+                                <Link href="/communities" className="rounded-lg px-4 py-3 text-base hover:bg-loam-border/20" onClick={() => setIsMenuOpen(false)}>
+                                    For communities
+                                </Link>
+                                <Link href="/traders" className="rounded-lg px-4 py-3 text-base hover:bg-loam-border/20" onClick={() => setIsMenuOpen(false)}>
+                                    For traders
+                                </Link>
+                                <Link href="/faq" className="rounded-lg px-4 py-3 text-base hover:bg-loam-border/20" onClick={() => setIsMenuOpen(false)}>
+                                    FAQ
+                                </Link>
+                            </nav>
+                        </div>
+                    </div>
+                )}
             </div>
         </header>
     );
