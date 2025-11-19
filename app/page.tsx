@@ -19,12 +19,29 @@ export default function Home() {
             We pool expertise from recruiters, domain experts, and AI—they compete using{" "}
             <span
               className="group relative inline-block cursor-pointer underline decoration-dotted underline-offset-4"
-              onClick={() => setShowTooltip(!showTooltip)}
+              onClick={(e) => {
+                e.stopPropagation();
+                setShowTooltip(!showTooltip);
+              }}
               onMouseEnter={() => setShowTooltip(true)}
               onMouseLeave={() => setShowTooltip(false)}
             >
               prediction markets
-              <span className={`fixed inset-x-4 top-1/2 -translate-y-1/2 z-50 w-auto rounded-lg border border-loam-border bg-white p-4 text-sm text-loam-ink shadow-xl md:absolute md:inset-auto md:bottom-full md:left-1/2 md:mb-2 md:w-64 md:-translate-x-1/2 md:translate-y-0 md:p-3 md:text-xs md:shadow-lg ${showTooltip ? 'block' : 'hidden'}`}>
+              {/* Mobile Backdrop */}
+              {showTooltip && (
+                <div
+                  className="fixed inset-0 z-40 bg-black/20 md:hidden"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setShowTooltip(false);
+                  }}
+                />
+              )}
+              {/* Tooltip Content */}
+              <span
+                className={`fixed inset-x-4 top-1/2 -translate-y-1/2 z-50 w-auto rounded-lg border border-loam-border bg-white p-4 text-sm text-loam-ink shadow-xl md:absolute md:inset-auto md:bottom-full md:left-1/2 md:mb-2 md:w-64 md:-translate-x-1/2 md:translate-y-0 md:p-3 md:text-xs md:shadow-lg ${showTooltip ? 'block' : 'hidden'}`}
+                onClick={(e) => e.stopPropagation()}
+              >
                 Instead of just voting, participants bet on outcomes. This aligns incentives: if you're right, you earn. If you're wrong, you lose. It filters out noise and surfaces the best candidates.
               </span>
             </span>{" "}
