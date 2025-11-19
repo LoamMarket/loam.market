@@ -1,65 +1,184 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="mx-auto max-w-2xl space-y-10 md:space-y-16">
+      {/* Hero */}
+      <section className="space-y-6 text-center">
+        <div className="space-y-3">
+          <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">
+            Many people could succeed in your role.
+            <br />
+            The problem is which one.
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="text-base text-loam-muted mx-auto max-w-xl">
+            We pool expertise from recruiters, domain experts, and AI—they compete using{" "}
+            <span className="group relative inline-block cursor-help underline decoration-dotted underline-offset-4">
+              prediction markets
+              <span className="pointer-events-none absolute bottom-full left-1/2 mb-2 hidden w-64 -translate-x-1/2 rounded-lg border border-loam-border bg-white p-3 text-xs text-loam-ink shadow-lg group-hover:block z-10">
+                Instead of just voting, participants bet on outcomes. This aligns incentives: if you're right, you earn. If you're wrong, you lose. It filters out noise and surfaces the best candidates.
+              </span>
+            </span>{" "}
+            to find your best matches. Only the ones who deliver earn rewards. One email a day. Pay only when you hire.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+      </section>
+
+      {/* Fractal intro */}
+      <section className="space-y-4 border-t border-loam-border pt-12">
+        <div className="space-y-2">
+          <p className="text-xs font-medium uppercase tracking-wide text-loam-muted">Starting with</p>
+          <h2 className="text-2xl font-semibold tracking-tight">
+            <a href="https://fractalbootcamp.com/" target="_blank" rel="noopener noreferrer" className="hover:text-loam-accent">Fractal Bootcamp</a> Alumni Network
+          </h2>
+          <p className="text-sm text-loam-muted max-w-xl">
+            In partnership with Fractal Bootcamp. Founding engineers in NYC, vetted by founders who've worked with them. If your hire isn't shipping, a FAANG-level engineer steps in.
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-3">
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/fractal"
+            className="inline-flex items-center justify-center rounded-full bg-loam-accent px-5 py-2 text-xs font-medium text-white shadow-sm hover:opacity-90"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+            See how it works
           </a>
           <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:fractal@loam.market"
+            className="inline-flex items-center justify-center rounded-full border border-loam-border bg-white/70 px-5 py-2 text-xs font-medium text-loam-ink shadow-sm hover:bg-white"
           >
-            Documentation
+            Email fractal@loam.market
           </a>
         </div>
-      </main>
+      </section>
+
+      {/* Coming Soon */}
+      <section className="space-y-4 border-t border-loam-border pt-12">
+        <h2 className="text-xs font-semibold uppercase tracking-wide text-loam-muted">Coming Soon</h2>
+        <div className="grid gap-6 sm:grid-cols-2">
+          <div className="space-y-2">
+            <h3 className="font-medium text-loam-ink">
+              <a href="https://bluedot.org/join-us" target="_blank" rel="noopener noreferrer" className="hover:text-loam-accent">Blue Dot</a>
+            </h3>
+            <p className="text-sm text-loam-muted">AI researchers and engineers from the Blue Dot network.</p>
+          </div>
+          <div className="space-y-2">
+            <h3 className="font-medium text-loam-ink">
+              <a href="https://www.highimpactprofessionals.org/" target="_blank" rel="noopener noreferrer" className="hover:text-loam-accent">High Impact Professionals</a>
+            </h3>
+            <p className="text-sm text-loam-muted">Mission-aligned professionals tackling global challenges.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Process for employers */}
+      <section className="space-y-4 border-t border-loam-border pt-12">
+        <h2 className="text-xs font-semibold uppercase tracking-wide text-loam-muted">Process for employers</h2>
+        <div className="grid gap-3 sm:gap-4 md:grid-cols-3">
+          <div className="rounded-lg border border-loam-border bg-white/50 p-4 sm:p-5 flex flex-col">
+            <div className="flex justify-center mb-3">
+              <span className="inline-flex items-center justify-center rounded-full bg-loam-accent/10 px-2.5 py-0.5 text-xs font-semibold text-loam-accent">
+                1
+              </span>
+            </div>
+            <h3 className="text-base font-semibold text-loam-ink mb-2">
+              Email your role
+            </h3>
+            <p className="text-sm text-loam-muted leading-relaxed">
+              Send it in any format to <a href="mailto:role@loam.market" className="underline hover:text-loam-accent">role@loam.market</a>.
+            </p>
+          </div>
+          <div className="rounded-lg border border-loam-border bg-white/50 p-4 sm:p-5 flex flex-col">
+            <div className="flex justify-center mb-3">
+              <span className="inline-flex items-center justify-center rounded-full bg-loam-accent/10 px-2.5 py-0.5 text-xs font-semibold text-loam-accent">
+                2
+              </span>
+            </div>
+            <h3 className="text-base font-semibold text-loam-ink mb-2">
+              We reply once a day
+            </h3>
+            <p className="text-sm text-loam-muted leading-relaxed">
+              We ask questions about the role and candidates. You reply with only what you want to provide.
+            </p>
+          </div>
+          <div className="rounded-lg border border-loam-border bg-white/50 p-4 sm:p-5 flex flex-col">
+            <div className="flex justify-center mb-3">
+              <span className="inline-flex items-center justify-center rounded-full bg-loam-accent/10 px-2.5 py-0.5 text-xs font-semibold text-loam-accent">
+                3
+              </span>
+            </div>
+            <h3 className="text-base font-semibold text-loam-ink mb-2">
+              Pay on success
+            </h3>
+            <p className="text-sm text-loam-muted leading-relaxed">
+              Industry competitive success fee when a match is made.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Logic behind this */}
+      <section className="space-y-4 border-t border-loam-border pt-12">
+        <h2 className="text-xs font-semibold uppercase tracking-wide text-loam-muted">Logic behind this</h2>
+        <p className="text-sm text-loam-muted max-w-xl">
+          We combine expertise in a principled way using prediction markets. We intentionally engineer mechanisms like our question bidding system to help the market surface the information it needs to find the best matches.
+        </p>
+        <div className="space-y-3 text-sm text-loam-muted">
+          <p>
+            <span className="font-semibold text-loam-ink">Truth-finding through incentives.</span> Prediction markets are very good at finding the truth. Every incentive to lie is another's incentive to call it out. They fairly reward the best, and "experts" who are wrong lose and can't participate.
+          </p>
+          <p>
+            <span className="font-semibold text-loam-ink">Dialectical process.</span> Bidding on questions enables a conversation with the goal of finding the truth. Role definitions shift as you interview. There's a lot of reading between the lines that no person or AI can get without digging.
+          </p>
+          <p>
+            <span className="font-semibold text-loam-ink">Real experts.</span> Real experts with domain knowledge tease out the right questions. Traditional recruitment struggles to distinguish between AI-generated buzzwords and true indicators of talent.
+          </p>
+        </div>
+      </section>
+
+      {/* Who are the market experts */}
+      <section className="space-y-4 border-t border-loam-border pt-12">
+        <h2 className="text-xs font-semibold uppercase tracking-wide text-loam-muted">Who are the market experts</h2>
+        <div className="grid gap-4 sm:grid-cols-2">
+          <div className="rounded-lg border border-loam-border bg-white/50 p-4 text-sm text-loam-muted">
+            People who have or currently work in roles similar to the ones you are filling
+          </div>
+          <div className="rounded-lg border border-loam-border bg-white/50 p-4 text-sm text-loam-muted">
+            Professionals with experience at top trading or quantitative investment firms
+          </div>
+          <div className="rounded-lg border border-loam-border bg-white/50 p-4 text-sm text-loam-muted">
+            Traditional recruiters with proven backgrounds
+          </div>
+          <div className="rounded-lg border border-loam-border bg-white/50 p-4 text-sm text-loam-muted">
+            Autonomous systems built by verified market experts
+          </div>
+          <div className="rounded-lg border border-loam-border bg-white/50 p-4 text-sm text-loam-muted sm:col-span-2">
+            You. Employers and their staff are also welcome to participate.
+          </div>
+        </div>
+        <div className="pt-2">
+          <a
+            href="/traders"
+            className="inline-flex items-center justify-center rounded-full border border-loam-border bg-white/70 px-5 py-2 text-xs font-medium text-loam-ink shadow-sm hover:bg-white"
+          >
+            Learn about trading
+          </a>
+        </div>
+      </section>
+
+      {/* For communities */}
+      <section className="space-y-4 border-t border-loam-border pt-12">
+        <div className="space-y-2">
+          <h2 className="text-lg font-semibold tracking-tight">Bring Loam to your community</h2>
+          <p className="text-sm text-loam-muted max-w-xl">
+            Bootcamp alumni, professional cohorts, mission-driven groups—any network with shared standards can run their own hiring market.
+          </p>
+        </div>
+        <a
+          href="/communities"
+          className="inline-flex items-center justify-center rounded-full border border-loam-border bg-white/70 px-5 py-2 text-xs font-medium text-loam-ink shadow-sm hover:bg-white"
+        >
+          Learn more
+        </a>
+      </section>
     </div>
   );
 }
+
