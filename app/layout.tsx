@@ -15,8 +15,33 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "loam.market",
+  metadataBase: new URL('https://loam.market'),
+  title: {
+    default: "loam.market",
+    template: "%s | loam.market",
+  },
   description: "Hiring, as efficiently as possible, through market-grown connections.",
+  keywords: ["hiring", "prediction markets", "recruiting", "tech hiring", "talent market", "fractal bootcamp"],
+  authors: [{ name: "Loam Market" }],
+  creator: "Loam Market",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://loam.market",
+    title: "loam.market",
+    description: "Hiring, as efficiently as possible, through market-grown connections.",
+    siteName: "loam.market",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "loam.market",
+    description: "Hiring, as efficiently as possible, through market-grown connections.",
+    creator: "@loam_market",
+  },
+  icons: {
+    icon: "/icon",
+    apple: "/icon",
+  },
 };
 
 export default function RootLayout({
