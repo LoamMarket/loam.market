@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: "%s | loam.market",
   },
   description: "Hiring, as efficiently as possible, through market-grown connections.",
-  keywords: ["hiring", "prediction markets", "recruiting", "tech hiring", "talent market", "fractal bootcamp"],
+  keywords: ["hiring", "prediction markets", "recruiting", "tech hiring", "talent market"],
   authors: [{ name: "Loam Market" }],
   creator: "Loam Market",
   openGraph: {
