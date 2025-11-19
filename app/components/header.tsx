@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { createPortal } from "react-dom";
 
 export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,14 +41,14 @@ export function Header() {
                     </div>
                 </button>
 
-                {isMenuOpen && (
+                {isMenuOpen && createPortal(
                     <div
-                        className="fixed inset-0 z-50 md:hidden"
+                        className="fixed inset-0 z-[100] md:hidden bg-loam-beige opacity-100"
                         style={{ backgroundColor: '#f5efe5' }}
                     >
                         <div className="flex h-full flex-col">
                             <div className="flex items-center justify-between border-b border-loam-border bg-loam-beige/95 px-4 py-4">
-                                <Link href="/" className="text-lg font-semibold">
+                                <Link href="/" className="text-sm font-semibold tracking-tight">
                                     loam.market
                                 </Link>
                                 <button
@@ -75,7 +76,8 @@ export function Header() {
                                 </Link>
                             </nav>
                         </div>
-                    </div>
+                    </div>,
+                    document.body
                 )}
             </div>
         </header>
