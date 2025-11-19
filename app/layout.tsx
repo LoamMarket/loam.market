@@ -3,6 +3,7 @@ import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "./components/header";
+import { CSPostHogProvider } from "./providers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -67,17 +68,19 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-loam-beige text-loam-ink`}
       >
-        <div className="min-h-screen flex flex-col">
-          <Header />
-          <main className="flex-1">
-            <div className="mx-auto max-w-5xl px-4 py-10">{children}</div>
-          </main>
-          <footer className="border-t border-loam-border bg-loam-beige/95 py-4">
-            <div className="mx-auto max-w-5xl px-4 text-xs text-loam-muted text-center">
-              loam.market — Hiring through community-validated prediction markets. hello@loam.market
-            </div>
-          </footer>
-        </div>
+        <CSPostHogProvider>
+          <div className="min-h-screen flex flex-col">
+            <Header />
+            <main className="flex-1">
+              <div className="mx-auto max-w-5xl px-4 py-10">{children}</div>
+            </main>
+            <footer className="border-t border-loam-border bg-loam-beige/95 py-4">
+              <div className="mx-auto max-w-5xl px-4 text-xs text-loam-muted text-center">
+                loam.market — Hiring through community-validated prediction markets. hello@loam.market
+              </div>
+            </footer>
+          </div>
+        </CSPostHogProvider>
       </body>
     </html>
   );
