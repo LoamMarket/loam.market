@@ -41,7 +41,10 @@ export function Header() {
                 </button>
 
                 {isMenuOpen && (
-                    <div className="fixed inset-0 z-50 bg-[#f5efe5] md:hidden">
+                    <div
+                        className="fixed inset-0 z-50 md:hidden"
+                        style={{ backgroundColor: '#f5efe5' }}
+                    >
                         <div className="flex h-full flex-col">
                             <div className="flex items-center justify-between border-b border-loam-border bg-loam-beige/95 px-4 py-4">
                                 <Link href="/" className="text-lg font-semibold">
