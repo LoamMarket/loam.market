@@ -47,7 +47,7 @@ export function Header() {
                         style={{ backgroundColor: '#f5efe5' }}
                     >
                         <div className="flex h-full flex-col">
-                            <div className="flex items-center justify-between border-b border-loam-border bg-loam-beige/95 px-4 py-4">
+                            <div className="flex h-16 items-center justify-between border-b border-loam-border bg-loam-beige/95 px-4">
                                 <Link href="/" className="text-sm font-semibold tracking-tight">
                                     loam.market
                                 </Link>
