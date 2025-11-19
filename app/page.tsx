@@ -45,7 +45,7 @@ export default function Home() {
                 Instead of just voting, participants bet on outcomes. This aligns incentives: if you're right, you earn. If you're wrong, you lose. It filters out noise and surfaces the best candidates.
               </span>
             </span>{" "}
-            to find your best matches. Only the ones who deliver earn rewards. One email a day. Pay only when you hire.
+            to find your best matches. Only the ones who deliver earn rewards. Max one email a day. Pay only when you hire.
           </p>
         </div>
       </section>
@@ -116,10 +116,10 @@ export default function Home() {
               <span className="inline-flex items-center justify-center rounded-full bg-loam-accent/10 px-2.5 py-0.5 text-xs font-semibold text-loam-accent">
                 2
               </span>
-              We reply daily
+              Max one email
             </h3>
             <p className="text-sm text-loam-muted leading-relaxed">
-              We ask questions about the role and candidates. You reply with only what you want to provide.
+              We batch questions into a single daily digest. We won't spam you.
             </p>
           </div>
           <div className="rounded-lg border border-loam-border bg-white/50 p-4 sm:p-5 flex flex-col">
