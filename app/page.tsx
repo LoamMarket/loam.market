@@ -1,4 +1,10 @@
+"use client";
+
+import { useState } from "react";
+
 export default function Home() {
+  const [showTooltip, setShowTooltip] = useState(false);
+
   return (
     <div className="mx-auto max-w-2xl space-y-10 md:space-y-16">
       {/* Hero */}
@@ -11,9 +17,14 @@ export default function Home() {
           </h1>
           <p className="text-base text-loam-muted mx-auto max-w-xl">
             We pool expertise from recruiters, domain experts, and AI—they compete using{" "}
-            <span className="group relative inline-block cursor-help underline decoration-dotted underline-offset-4">
+            <span
+              className="group relative inline-block cursor-pointer underline decoration-dotted underline-offset-4"
+              onClick={() => setShowTooltip(!showTooltip)}
+              onMouseEnter={() => setShowTooltip(true)}
+              onMouseLeave={() => setShowTooltip(false)}
+            >
               prediction markets
-              <span className="pointer-events-none absolute bottom-full left-1/2 mb-2 hidden w-64 -translate-x-1/2 rounded-lg border border-loam-border bg-white p-3 text-xs text-loam-ink shadow-lg group-hover:block z-10">
+              <span className={`absolute bottom-full left-1/2 mb-2 w-64 -translate-x-1/2 rounded-lg border border-loam-border bg-white p-3 text-xs text-loam-ink shadow-lg z-10 ${showTooltip ? 'block' : 'hidden'}`}>
                 Instead of just voting, participants bet on outcomes. This aligns incentives: if you're right, you earn. If you're wrong, you lose. It filters out noise and surfaces the best candidates.
               </span>
             </span>{" "}
