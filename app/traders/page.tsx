@@ -6,7 +6,7 @@ export default function TradersPage() {
       {/* Hero */}
       <section className="space-y-4">
         <p className="text-xs font-medium uppercase tracking-wide text-loam-muted">
-          For professional traders
+          For market participants
         </p>
         <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">
           Bring your edge to hiring markets.
@@ -79,9 +79,9 @@ export default function TradersPage() {
 
       {/* Who can trade */}
       <section className="space-y-4 border-t border-loam-border pt-12">
-        <h2 className="text-lg font-semibold tracking-tight">Who can trade</h2>
+        <h2 className="text-lg font-semibold tracking-tight">Who can participate</h2>
         <p className="text-sm text-loam-muted max-w-xl">
-          We're looking for people with technical or professional trading backgrounds:
+          We're looking for people with technical or professional backgrounds:
         </p>
         <div className="grid gap-3">
           <div className="rounded-lg border border-loam-border bg-white/50 p-3 text-sm text-loam-muted">

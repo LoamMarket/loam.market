@@ -49,35 +49,7 @@ const sections = [
       },
     ],
   },
-  {
-    title: "Communities",
-    items: [
-      {
-        question: "Do we have to manage the marketplace?",
-        answer:
-          "No. Loam runs the platform, handles payments, moderates markets, and provides support. You make introductions and celebrate placements.",
-      },
-      {
-        question: "What if members don’t understand prediction markets?",
-        answer: "We provide onboarding, documentation, and hands-on help. Most members get it once they see a role run end-to-end.",
-      },
-      {
-        question: "Can our marketplace stay private?",
-        answer:
-          "Yes. We can make your community invite-only and verify every expert before they participate. Access is scoped to your network.",
-      },
-      {
-        question: "How do you handle conflicts of interest?",
-        answer:
-          "Prediction markets are robust to conflicts of interest. Every incentive to lie is another person's incentive to call them out and profit. If someone tries to manipulate a market, others can bet against them and earn credits when the truth emerges.",
-      },
-      {
-        question: "What’s the minimum community size?",
-        answer:
-          "We’ve launched with as few as 30 active members, but the ideal is 100+ with at least 10 hiring managers and 10 job seekers at any given time.",
-      },
-    ],
-  },
+
 ];
 
 export default function FaqPage() {
@@ -86,7 +58,7 @@ export default function FaqPage() {
       <section className="space-y-4">
         <h1 className="text-2xl font-semibold tracking-tight">FAQ</h1>
         <p className="text-sm text-loam-muted max-w-2xl">
-          Answers for employers, community leaders, candidates, and experts using community-validated prediction markets.
+          Answers for employers, candidates, and experts using community-validated prediction markets.
         </p>
         <div className="space-y-8">
           {sections.map((section) => (

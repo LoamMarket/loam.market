@@ -65,11 +65,9 @@ export function Header() {
                                 <Link href="/fractal" className="rounded-lg px-4 py-3 text-base hover:bg-loam-border/20" onClick={() => setIsMenuOpen(false)}>
                                     Fractal Network
                                 </Link>
-                                <Link href="/communities" className="rounded-lg px-4 py-3 text-base hover:bg-loam-border/20" onClick={() => setIsMenuOpen(false)}>
-                                    For communities
-                                </Link>
+
                                 <Link href="/traders" className="rounded-lg px-4 py-3 text-base hover:bg-loam-border/20" onClick={() => setIsMenuOpen(false)}>
-                                    For traders
+                                    Market Participants
                                 </Link>
                                 <Link href="/faq" className="rounded-lg px-4 py-3 text-base hover:bg-loam-border/20" onClick={() => setIsMenuOpen(false)}>
                                     FAQ
@@ -93,11 +91,9 @@ function NavLinks({ onClick }: { onClick?: () => void }) {
             <Link href="/fractal" className="hover:text-loam-accent transition-colors" onClick={onClick}>
                 Fractal Network
             </Link>
-            <Link href="/communities" className="hover:text-loam-accent transition-colors" onClick={onClick}>
-                For communities
-            </Link>
+
             <Link href="/traders" className="hover:text-loam-accent transition-colors" onClick={onClick}>
-                For traders
+                Market Participants
             </Link>
             <Link href="/faq" className="hover:text-loam-accent transition-colors" onClick={onClick}>
                 FAQ

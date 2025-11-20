@@ -16,7 +16,7 @@ export default function Home() {
             The problem is which one.
           </h1>
           <p className="text-base text-loam-muted mx-auto max-w-xl">
-            We pool expertise from recruiters, domain experts, and AI—they compete using{" "}
+            We pool expertise from recruiters, domain experts, and AI. They compete using{" "}
             <span
               className="group relative inline-block cursor-pointer underline decoration-dotted underline-offset-4"
               onClick={(e) => {
@@ -157,7 +157,7 @@ export default function Home() {
 
       {/* Who are the market experts */}
       <section className="space-y-4 border-t border-loam-border pt-12">
-        <h2 className="text-xs font-semibold uppercase tracking-wide text-loam-muted">Who are the market experts</h2>
+        <h2 className="text-xs font-semibold uppercase tracking-wide text-loam-muted">Who are the market participants</h2>
         <div className="grid gap-4 sm:grid-cols-2">
           <div className="rounded-lg border border-loam-border bg-white/50 p-4 text-sm text-loam-muted">
             People who have or currently work in roles similar to the ones you are filling
@@ -180,26 +180,12 @@ export default function Home() {
             href="/traders"
             className="inline-flex items-center justify-center rounded-full border border-loam-border bg-white/70 px-5 py-2 text-xs font-medium text-loam-ink shadow-sm hover:bg-white"
           >
-            Learn about trading
+            Learn about participating
           </a>
         </div>
       </section>
 
-      {/* For communities */}
-      <section className="space-y-4 border-t border-loam-border pt-12">
-        <div className="space-y-2">
-          <h2 className="text-lg font-semibold tracking-tight">Bring Loam to your community</h2>
-          <p className="text-sm text-loam-muted max-w-xl">
-            Bootcamp alumni, professional cohorts, mission-driven groups—any network with shared standards can run their own hiring market.
-          </p>
-        </div>
-        <a
-          href="/communities"
-          className="inline-flex items-center justify-center rounded-full border border-loam-border bg-white/70 px-5 py-2 text-xs font-medium text-loam-ink shadow-sm hover:bg-white"
-        >
-          Learn more
-        </a>
-      </section>
+
     </div>
   );
 }

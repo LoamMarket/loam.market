@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     default: "loam.market",
     template: "%s | loam.market",
   },
-  description: "Hiring, as efficiently as possible, through market-grown connections.",
+  description: "Hiring through community validated prediction markets.",
   keywords: ["hiring", "prediction markets", "recruiting", "tech hiring", "talent market"],
   authors: [{ name: "Loam Market" }],
   creator: "Loam Market",
@@ -30,13 +30,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://loam.market",
     title: "loam.market",
-    description: "Hiring, as efficiently as possible, through market-grown connections.",
+    description: "Hiring through community validated prediction markets.",
     siteName: "loam.market",
   },
   twitter: {
     card: "summary_large_image",
     title: "loam.market",
-    description: "Hiring, as efficiently as possible, through market-grown connections.",
+    description: "Hiring through community validated prediction markets.",
     creator: "@loam_market",
   },
   icons: {
@@ -76,7 +76,7 @@ export default function RootLayout({
             </main>
             <footer className="border-t border-loam-border bg-loam-beige/95 py-4">
               <div className="mx-auto max-w-5xl px-4 text-xs text-loam-muted text-center">
-                loam.market — Hiring through community-validated prediction markets. hello@loam.market
+                loam.market — Hiring through community validated prediction markets. hello@loam.market
               </div>
             </footer>
           </div>
