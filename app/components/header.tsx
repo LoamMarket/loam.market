@@ -63,7 +63,7 @@ export function Header() {
                             </div>
                             <nav className="flex flex-col gap-1 p-4">
                                 <Link href="/fractal" className="rounded-lg px-4 py-3 text-base hover:bg-loam-border/20" onClick={() => setIsMenuOpen(false)}>
-                                    Fractal Network
+                                    Vetted Pools
                                 </Link>
 
                                 <Link href="/traders" className="rounded-lg px-4 py-3 text-base hover:bg-loam-border/20" onClick={() => setIsMenuOpen(false)}>
@@ -89,7 +89,7 @@ function NavLinks({ onClick }: { onClick?: () => void }) {
                 Home
             </Link>
             <Link href="/fractal" className="hover:text-loam-accent transition-colors" onClick={onClick}>
-                Fractal Network
+                Vetted Pools
             </Link>
 
             <Link href="/traders" className="hover:text-loam-accent transition-colors" onClick={onClick}>
