@@ -169,19 +169,19 @@ export default function Home() {
         <h2 className="text-xs font-semibold uppercase tracking-wide text-loam-muted">what sets us apart</h2>
         <div className="grid gap-4 sm:grid-cols-3">
           <div className="space-y-2">
-            <h3 className="font-semibold text-loam-ink text-sm">Truth-finding through incentives.</h3>
+            <h3 className="font-semibold text-loam-ink text-sm">Truth-finding</h3>
             <p className="text-sm text-loam-muted">
               Prediction markets are very good at finding the truth. Every incentive to lie is another's incentive to call it out. They fairly reward the best, and "experts" who are wrong lose and can't participate.
             </p>
           </div>
           <div className="space-y-2">
-            <h3 className="font-semibold text-loam-ink text-sm">Rigorous debate.</h3>
+            <h3 className="font-semibold text-loam-ink text-sm">Rigorous debate</h3>
             <p className="text-sm text-loam-muted">
               Bidding on questions enables a conversation with the goal of finding the truth. Role definitions shift as you interview. There's a lot of reading between the lines that no person or AI can get without digging.
             </p>
           </div>
           <div className="space-y-2">
-            <h3 className="font-semibold text-loam-ink text-sm">Real experts.</h3>
+            <h3 className="font-semibold text-loam-ink text-sm">Real experts</h3>
             <p className="text-sm text-loam-muted">
               Real experts with domain knowledge tease out the right questions. Traditional recruitment struggles to distinguish between AI-generated buzzwords and true indicators of talent.
             </p>
