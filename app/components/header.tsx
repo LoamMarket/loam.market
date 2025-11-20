@@ -67,7 +67,7 @@ export function Header() {
                                 </Link>
 
                                 <Link href="/traders" className="rounded-lg px-4 py-3 text-base hover:bg-loam-border/20" onClick={() => setIsMenuOpen(false)}>
-                                    Market Participants
+                                    Interviewers
                                 </Link>
                                 <Link href="/faq" className="rounded-lg px-4 py-3 text-base hover:bg-loam-border/20" onClick={() => setIsMenuOpen(false)}>
                                     FAQ
@@ -93,7 +93,7 @@ function NavLinks({ onClick }: { onClick?: () => void }) {
             </Link>
 
             <Link href="/traders" className="hover:text-loam-accent transition-colors" onClick={onClick}>
-                Market Participants
+                Interviewers
             </Link>
             <Link href="/faq" className="hover:text-loam-accent transition-colors" onClick={onClick}>
                 FAQ
