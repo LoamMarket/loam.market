@@ -87,7 +87,7 @@ export default function Home() {
               Meet matches
             </h3>
             <p className="text-sm text-loam-muted leading-relaxed">
-              One email per day max with high-signal questions and candidates. Pay only when you hire.
+              One email per day max with high-signal deduplicated questions and candidates. Pay only when you hire.
             </p>
           </div>
         </div>
