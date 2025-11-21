@@ -131,7 +131,7 @@ export default function Home() {
         </div>
         <div className="flex flex-wrap gap-3">
           <a
-            href="/fractal"
+            href="/pools"
             className="inline-flex items-center justify-center rounded-full bg-loam-accent px-5 py-2 text-xs font-medium text-white shadow-sm hover:opacity-90"
           >
             Explore this pool
@@ -208,7 +208,7 @@ export default function Home() {
         </div>
         <div className="pt-2">
           <a
-            href="/traders"
+            href="/interviewers"
             className="inline-flex items-center justify-center rounded-full border border-loam-border bg-white/70 px-5 py-2 text-xs font-medium text-loam-ink shadow-sm hover:bg-white"
           >
             Learn about participating

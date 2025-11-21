@@ -62,12 +62,15 @@ export function Header() {
                                 </button>
                             </div>
                             <nav className="flex flex-col gap-1 p-4">
-                                <Link href="/fractal" className="rounded-lg px-4 py-3 text-base hover:bg-loam-border/20" onClick={() => setIsMenuOpen(false)}>
+                                <Link href="/pools" className="rounded-lg px-4 py-3 text-base hover:bg-loam-border/20" onClick={() => setIsMenuOpen(false)}>
                                     Vetted Pools
                                 </Link>
 
-                                <Link href="/traders" className="rounded-lg px-4 py-3 text-base hover:bg-loam-border/20" onClick={() => setIsMenuOpen(false)}>
+                                <Link href="/interviewers" className="rounded-lg px-4 py-3 text-base hover:bg-loam-border/20" onClick={() => setIsMenuOpen(false)}>
                                     Interviewers
+                                </Link>
+                                <Link href="/candidates" className="rounded-lg px-4 py-3 text-base hover:bg-loam-border/20" onClick={() => setIsMenuOpen(false)}>
+                                    Candidates
                                 </Link>
                                 <Link href="/faq" className="rounded-lg px-4 py-3 text-base hover:bg-loam-border/20" onClick={() => setIsMenuOpen(false)}>
                                     FAQ
@@ -88,12 +91,15 @@ function NavLinks({ onClick }: { onClick?: () => void }) {
             <Link href="/" className="hover:text-loam-accent transition-colors" onClick={onClick}>
                 Home
             </Link>
-            <Link href="/fractal" className="hover:text-loam-accent transition-colors" onClick={onClick}>
+            <Link href="/pools" className="hover:text-loam-accent transition-colors" onClick={onClick}>
                 Vetted Pools
             </Link>
 
-            <Link href="/traders" className="hover:text-loam-accent transition-colors" onClick={onClick}>
+            <Link href="/interviewers" className="hover:text-loam-accent transition-colors" onClick={onClick}>
                 Interviewers
+            </Link>
+            <Link href="/candidates" className="hover:text-loam-accent transition-colors" onClick={onClick}>
+                Candidates
             </Link>
             <Link href="/faq" className="hover:text-loam-accent transition-colors" onClick={onClick}>
                 FAQ
